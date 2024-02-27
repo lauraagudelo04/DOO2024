@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="75C0DA3B-0AB7-8D92-3E56-FD555140F3C6" mainViewID="658A1CDB-CE91-A7F3-E5FE-5BB81EBAB5A8">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:10:20 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

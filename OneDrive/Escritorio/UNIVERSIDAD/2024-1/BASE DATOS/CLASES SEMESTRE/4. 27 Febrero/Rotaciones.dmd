@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Rotaciones" id="38491C39-5CC5-60EC-689D-5B602FBB570D" version="3.5">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:10:20 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>38491C39-5CC5-60EC-689D-5B602FBB570D</designId>
+</OSDM_Design>

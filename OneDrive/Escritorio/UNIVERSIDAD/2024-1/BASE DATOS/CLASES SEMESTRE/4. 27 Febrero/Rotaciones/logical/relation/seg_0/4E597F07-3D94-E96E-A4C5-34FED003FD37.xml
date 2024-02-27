@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="4E597F07-3D94-E96E-A4C5-34FED003FD37">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:46:41 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<sourcePk>E92A3665-2060-6474-077C-EAA6998FD5AE</sourcePk>
+<targetPk>CE9BD2AD-A927-5540-04D5-9F4B7A7151B7</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F6B2AEBA-4AE8-E7FE-DD2A-443EF897B602</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>419B0767-EE46-220B-8941-E59D69BB3A46</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

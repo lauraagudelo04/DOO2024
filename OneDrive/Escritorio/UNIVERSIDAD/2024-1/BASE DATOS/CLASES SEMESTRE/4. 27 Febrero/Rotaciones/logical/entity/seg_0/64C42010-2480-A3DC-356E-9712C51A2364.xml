@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="64C42010-2480-A3DC-356E-9712C51A2364" name="Grupo">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:22:25 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Grupo" id="1B1803DA-2BCE-DC3D-F66F-010D5854F3BB">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:23:45 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Estudiante" id="EFB8B1B5-FCD2-A7F9-D215-E4C323DD1BEB">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:24:28 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Inicio" id="FE2C695A-457A-73BB-9D3B-608D329C2A59">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:31:17 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Fin" id="E886E4BF-7DC2-4020-A3F8-0E11188E5708">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:33:15 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A70AD818-4FD5-1467-69C9-19EF04C05C02" name="Grupos PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:24:22 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1B1803DA-2BCE-DC3D-F66F-010D5854F3BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

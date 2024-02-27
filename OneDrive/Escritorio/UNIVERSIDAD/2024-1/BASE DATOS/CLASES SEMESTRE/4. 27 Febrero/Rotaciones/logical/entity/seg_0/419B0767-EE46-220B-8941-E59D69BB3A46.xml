@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="419B0767-EE46-220B-8941-E59D69BB3A46" name="ESTUDIANTE">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:14:08 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Estudiante" id="4DC1F1E9-DCFB-BE76-F5A6-7F72D9E24F3A">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:15:28 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="FC13280F-AFAD-3317-00B2-68EF2332B23A">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:19:36 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="2422C550-E0F6-7C25-1652-AF3F81269CE5">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:20:22 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Estudiante1" id="E0CBD634-4E17-B068-6316-D782657C1BF8">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:46:41 UTC</createdTime>
+<generatorID>4E597F07-3D94-E96E-A4C5-34FED003FD37</generatorID>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4DC1F1E9-DCFB-BE76-F5A6-7F72D9E24F3A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CE9BD2AD-A927-5540-04D5-9F4B7A7151B7" name="ESTUDIANTE PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-02-27 21:19:26 UTC</createdTime>
+<ownerDesignName>Rotaciones</ownerDesignName>
+<engineerTo>
+<item key="6FCAA29E-1F10-9777-7B16-E759931ED78F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4DC1F1E9-DCFB-BE76-F5A6-7F72D9E24F3A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
