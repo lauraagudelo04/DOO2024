@@ -1,7 +1,8 @@
 package dominio;
 
 import excepcion.FraccionNullException;
-import excepcion.NoAmplificaException;
+import excepcion.AmplificadorCeroException;
+import excepcion.AmplificadorUnoException;
 
 public class Calculadora {
 
@@ -9,29 +10,39 @@ public class Calculadora {
 		super();
 	}
 
-	private static long calcularMaximoComunDivisor(long a, long b) {
-		if (b == 0) {
-			return a;
+	private static long calcularMaximoComunDivisor(long numerador, long denominador) {
+		if (denominador == 0) {
+			return numerador;
 		}
-		return (calcularMaximoComunDivisor(b, a % b));
+		return (calcularMaximoComunDivisor(denominador, numerador % denominador));
 	}
 
-	private static void notificarNulos(Fraccion fraccionUno, Fraccion fraccionDos) {
-		if (fraccionUno == null) {
-			throw new FraccionNullException(1);
+	private static void notificarNulo(Fraccion fraccionUno, Fraccion fraccionDos) {
+		if (fraccionUno == null || fraccionDos==null) {
+			throw new FraccionNullException();
 		}
-		if (fraccionDos == null) {
-			throw new FraccionNullException(2);
+	}
+	
+	private static void notificarNulo(FraccionMixta fraccionMixtaUno, FraccionMixta fraccionMixtaDos) {
+		if (fraccionMixtaUno == null || fraccionMixtaDos == null) {
+			throw new FraccionNullException();
 		}
+	}
+
+	public static boolean isPropia(Fraccion fraccion) {
+		if (fraccion==null) {
+			throw new FraccionNullException();
+		}
+		return (fraccion.getNumerador() < fraccion.getDenominador());
 	}
 
 	public static Fraccion simplificar(Fraccion fraccion) {
-		long comunDivisor = calcularMaximoComunDivisor(fraccion.getNumerador(), fraccion.getDenominador());
-		return Fraccion.crear(fraccion.getNumerador() / comunDivisor, fraccion.getDenominador() / comunDivisor);
+		long maximoComunDivisor = calcularMaximoComunDivisor(fraccion.getNumerador(), fraccion.getDenominador());
+		return Fraccion.crear(fraccion.getNumerador() / maximoComunDivisor, fraccion.getDenominador() / maximoComunDivisor);
 	}
 
 	public static Fraccion sumar(Fraccion fraccionUno, Fraccion fraccionDos) {
-		notificarNulos(fraccionUno, fraccionDos);
+		notificarNulo(fraccionUno, fraccionDos);
 		long resultadoNumerador = (fraccionUno.getDenominador() * fraccionDos.getNumerador())
 				+ (fraccionUno.getNumerador() * fraccionDos.getDenominador());
 		long resultadoDenominador = (fraccionUno.getDenominador() * fraccionDos.getDenominador());
@@ -40,7 +51,7 @@ public class Calculadora {
 	}
 
 	public static Fraccion restar(Fraccion fraccionUno, Fraccion fraccionDos) {
-		notificarNulos(fraccionUno, fraccionDos);
+		notificarNulo(fraccionUno, fraccionDos);
 		long resultadoNumerador = (fraccionUno.getDenominador() * fraccionDos.getNumerador())
 				- (fraccionUno.getNumerador() * fraccionDos.getDenominador());
 		long resultadoDenominador = (fraccionUno.getDenominador() * fraccionDos.getDenominador());
@@ -49,7 +60,7 @@ public class Calculadora {
 	}
 
 	public static Fraccion multiplicar(Fraccion fraccionUno, Fraccion fraccionDos) {
-		notificarNulos(fraccionUno, fraccionDos);
+		notificarNulo(fraccionUno, fraccionDos);
 		long resultadoNumerador = (fraccionUno.getNumerador() * fraccionDos.getNumerador());
 		long resultadoDenominador = (fraccionUno.getDenominador() * fraccionDos.getDenominador());
 
@@ -57,7 +68,7 @@ public class Calculadora {
 	}
 
 	public static Fraccion dividir(Fraccion fraccionUno, Fraccion fraccionDos) {
-		notificarNulos(fraccionUno, fraccionDos);
+		notificarNulo(fraccionUno, fraccionDos);
 		long resultadoNumerador = (fraccionUno.getNumerador() * fraccionDos.getDenominador());
 		long resultadoDenominador = (fraccionUno.getDenominador() * fraccionDos.getNumerador());
 
@@ -66,31 +77,34 @@ public class Calculadora {
 
 	public static Fraccion amplificar(long numeroAmplificador, Fraccion fracccion) {
 		if (fracccion == null) {
-			throw new FraccionNullException(1);
+			throw new FraccionNullException();
 		}
 		if (numeroAmplificador == 0) {
-			throw new NoAmplificaException();
+			throw new AmplificadorCeroException();
+		}
+		if (numeroAmplificador==1) {
+			throw new AmplificadorUnoException();
 		}
 		long resultadoNumerador = fracccion.getNumerador() * numeroAmplificador;
 		long resultadoDenominador = fracccion.getDenominador() * numeroAmplificador;
 		return Fraccion.crear(resultadoNumerador, resultadoDenominador);
 	}
 
-	public static Fraccion convertirMixto(FraccionMixta fraccionMixto) {
-		if (fraccionMixto == null) {
-			throw new FraccionNullException(1);
+	public static Fraccion convertirMixtoAFraccion(FraccionMixta fraccionMixta) {
+		if (fraccionMixta == null) {
+			throw new FraccionNullException();
 		}
-		long resultadoNumerador = (fraccionMixto.getParteEntera() * fraccionMixto.getDenominador())
-				+ fraccionMixto.getNumerador();
-		long resultadoDenominador = fraccionMixto.getDenominador();
+		long resultadoNumerador = (fraccionMixta.getParteEntera() * fraccionMixta.getDenominador())
+				+ fraccionMixta.getNumerador();
+		long resultadoDenominador = fraccionMixta.getDenominador();
 		return Fraccion.crear(resultadoNumerador, resultadoDenominador);
 	}
 
-	public static FraccionMixta convertirFraccion(Fraccion fraccion) {
+	public static FraccionMixta convertirFraccionAMixto(Fraccion fraccion) {
 		if (fraccion == null) {
-			throw new FraccionNullException(1);
+			throw new FraccionNullException();
 		}
-		if (fraccion.isPropiaImpropia(fraccion)) {
+		if (isPropia(fraccion)) {
 			return FraccionMixta.crear(0, fraccion.getNumerador(), fraccion.getDenominador());
 		}
 		long parteEntera = fraccion.getNumerador() / fraccion.getDenominador();
@@ -99,43 +113,57 @@ public class Calculadora {
 		return FraccionMixta.crear(parteEntera, nuevoNumerador, fraccion.getDenominador());
 	}
 
-	public static FraccionMixta sumar(FraccionMixta mixto1, FraccionMixta mixto2) {
-		Fraccion fraccionUno = convertirMixto(mixto1);
-		Fraccion fraccion2 = convertirMixto(mixto2);
-		Fraccion resultado = sumar(fraccionUno, fraccion2);
-		return convertirFraccion(resultado);
+	public static FraccionMixta sumar(FraccionMixta mixtoUno, FraccionMixta mixtoDos) {
+		notificarNulo(mixtoUno, mixtoDos);
+		Fraccion fraccionUno = convertirMixtoAFraccion(mixtoUno);
+		Fraccion fraccionDos = convertirMixtoAFraccion(mixtoDos);
+		Fraccion resultado = sumar(fraccionUno, fraccionDos);
+		return convertirFraccionAMixto(resultado);
 	}
 
-	public static FraccionMixta restar(FraccionMixta mixto1, FraccionMixta mixto2) {
-		Fraccion fraccionUno = convertirMixto(mixto1);
-		Fraccion fraccionDos = convertirMixto(mixto2);
+	public static FraccionMixta restar(FraccionMixta mixtoUno, FraccionMixta mixtoDos) {
+		notificarNulo(mixtoUno, mixtoDos);
+		Fraccion fraccionUno = convertirMixtoAFraccion(mixtoUno);
+		Fraccion fraccionDos = convertirMixtoAFraccion(mixtoDos);
 		Fraccion resultado = restar(fraccionUno, fraccionDos);
-		return convertirFraccion(resultado);
+		return convertirFraccionAMixto(resultado);
 	}
 
 	public static FraccionMixta multiplicar(FraccionMixta mixtoUno, FraccionMixta mixtoDos) {
-		Fraccion fraccionUno = convertirMixto(mixtoUno);
-		Fraccion fraccionDos = convertirMixto(mixtoDos);
+		notificarNulo(mixtoUno, mixtoDos);
+		Fraccion fraccionUno = convertirMixtoAFraccion(mixtoUno);
+		Fraccion fraccionDos = convertirMixtoAFraccion(mixtoDos);
 		Fraccion resultado = multiplicar(fraccionUno, fraccionDos);
-		return convertirFraccion(resultado);
+		return convertirFraccionAMixto(resultado);
 	}
 
 	public static FraccionMixta dividir(FraccionMixta mixtoUno, FraccionMixta mixtoDos) {
-		Fraccion fraccionUno = convertirMixto(mixtoUno);
-		Fraccion fraccionDos = convertirMixto(mixtoDos);
+		notificarNulo(mixtoUno, mixtoDos);
+		Fraccion fraccionUno = convertirMixtoAFraccion(mixtoUno);
+		Fraccion fraccionDos = convertirMixtoAFraccion(mixtoDos);
 		Fraccion resultado = dividir(fraccionUno, fraccionDos);
-		return convertirFraccion(resultado);
+		return convertirFraccionAMixto(resultado);
 	}
 
-	public static FraccionMixta amplificar(long numeroAmplificador, FraccionMixta mixtoUno) {
-		Fraccion fraccionUno = convertirMixto(mixtoUno);
+	public static FraccionMixta amplificar(long numeroAmplificador, FraccionMixta fraccionMixta) {
+		if ( fraccionMixta== null) {
+			throw new FraccionNullException();
+		}
+		if (numeroAmplificador == 0) {
+			throw new AmplificadorCeroException();
+		}
+		if (numeroAmplificador==1) {
+			throw new AmplificadorUnoException();
+		}
+		Fraccion fraccionUno = convertirMixtoAFraccion(fraccionMixta);
 		Fraccion resultado = amplificar(numeroAmplificador, fraccionUno);
-		return convertirFraccion(resultado);
+		return convertirFraccionAMixto(resultado);
 	}
 
 	public static FraccionMixta simplificar(FraccionMixta mixtoUno) {
-		Fraccion fraccionUno = convertirMixto(mixtoUno);
+		
+		Fraccion fraccionUno = convertirMixtoAFraccion(mixtoUno);
 		Fraccion resultado = simplificar(fraccionUno);
-		return convertirFraccion(resultado);
+		return convertirFraccionAMixto(resultado);
 	}
 }

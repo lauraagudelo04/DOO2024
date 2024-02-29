@@ -1,6 +1,6 @@
 package dominio;
 
-import excepcion.FraccionInexistenteException;
+import excepcion.DenominadorCeroException;
 
 public class Fraccion {
 	private long numerador;
@@ -13,17 +13,6 @@ public class Fraccion {
 
 	public static Fraccion crear(long numerador, long denominador) {
 		return new Fraccion(numerador, denominador);
-	}
-
-	public boolean isPropiaImpropia(Fraccion fraccion) {
-		if (fraccion.getNumerador() < fraccion.getDenominador()) {
-			System.out.println("Es propia");
-			return true;
-		} else if (fraccion.getNumerador() > fraccion.getDenominador()) {
-			System.out.println("Es impropia");
-			return false;
-		}
-		return false;
 	}
 
 	public long getNumerador() {
@@ -42,7 +31,7 @@ public class Fraccion {
 		this.denominador = denominador;
 
 		if (denominador == 0) {
-			throw new FraccionInexistenteException();
+			throw new DenominadorCeroException();
 		}
 	}
 

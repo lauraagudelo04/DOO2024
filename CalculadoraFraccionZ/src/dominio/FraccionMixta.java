@@ -1,6 +1,6 @@
 package dominio;
 
-import excepcion.ParteEnteraException;
+import excepcion.MixtoParteEnteraNegativaException;
 
 public class FraccionMixta extends Fraccion {
 	private long parteEntera;
@@ -22,7 +22,7 @@ public class FraccionMixta extends Fraccion {
 		this.parteEntera = parteEntera;
 
 		if (parteEntera < 0) {
-			throw new ParteEnteraException();
+			throw new MixtoParteEnteraNegativaException();
 		}
 	}
 
