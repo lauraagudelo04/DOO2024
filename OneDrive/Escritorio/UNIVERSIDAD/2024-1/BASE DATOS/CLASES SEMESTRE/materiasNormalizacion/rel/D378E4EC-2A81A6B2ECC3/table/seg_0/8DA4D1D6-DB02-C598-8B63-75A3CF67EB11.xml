@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DA4D1D6-DB02-C598-8B63-75A3CF67EB11" name="programa">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:13:51 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="A18FCB28-DDDC-1649-B922-05DF6B3CA46B">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:14:22 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="programa" id="EA7FB1B2-02E8-5013-1DFE-FEB68DA373D2">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:14:22 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inp" id="57BF1886-E868-E2B0-47E5-1B2842012E9B">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:14:22 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8F1C6AA-5F55-351C-E4A6-B6DE7D1EE865" name="programa_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:14:22 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A18FCB28-DDDC-1649-B922-05DF6B3CA46B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

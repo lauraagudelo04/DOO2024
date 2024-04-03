@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="materiasNormalizacion" id="7796F61D-2693-E23B-075C-80F9737AC80E" version="3.5">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-02 23:54:58 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7796F61D-2693-E23B-075C-80F9737AC80E</designId>
+</OSDM_Design>

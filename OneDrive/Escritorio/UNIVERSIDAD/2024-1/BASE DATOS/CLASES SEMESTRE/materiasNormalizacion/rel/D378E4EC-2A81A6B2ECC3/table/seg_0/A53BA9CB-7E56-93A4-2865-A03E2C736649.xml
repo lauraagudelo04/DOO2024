@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A53BA9CB-7E56-93A4-2865-A03E2C736649" name="estado">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:20:17 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="A125D1ED-59D4-07E5-8786-375CAF24238B">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:20:57 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B566BDF3-39B5-94BD-7540-B507908EF7F7">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:20:57 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8BFD502-BC1E-2A0E-8243-E994405C9C7F" name="estado_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:20:57 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A125D1ED-59D4-07E5-8786-375CAF24238B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

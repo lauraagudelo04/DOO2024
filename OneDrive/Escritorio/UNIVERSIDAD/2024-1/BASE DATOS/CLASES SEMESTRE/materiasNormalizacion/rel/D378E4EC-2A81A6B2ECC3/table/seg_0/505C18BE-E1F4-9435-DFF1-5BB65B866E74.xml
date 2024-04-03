@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="505C18BE-E1F4-9435-DFF1-5BB65B866E74" name="materiasCursadas">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:35:52 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="81923B19-1058-400D-8D78-2ABC5D6D515B">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="final" id="EAAC2533-5BE1-65DC-6AD5-1AE8E084F69F">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parcial" id="05D3851F-DE04-3BFB-D6AC-F88614E0F81A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seguimiento" id="62FDD4C2-469D-FEBB-0420-A4C225748C3D">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="definitiva" id="7F5833F8-41DD-4AEE-1CBE-8AA3CC0BBDFF">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="semestreCursada" id="EAEAE875-468A-E95B-A3E1-87C3829CD866">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="semestre" id="98E9FC96-DC40-36F0-755E-AE621E58381C">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="grupo" id="936D5095-1194-E92B-F721-08B9B69B63D3">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="materia_codigo" id="E6D842CC-B1D2-BA7E-C18E-EEC41C7DB2D9">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estudiante_id" id="2CDA3EE8-A8D8-D4E4-FB30-D2B5C12138CC">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91ED8BB1-D2AB-0B02-6BCE-3A700C336583" name="materiasCursadas_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-03 00:37:29 UTC</createdTime>
+<ownerDesignName>materiasNormalizacion</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81923B19-1058-400D-8D78-2ABC5D6D515B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
