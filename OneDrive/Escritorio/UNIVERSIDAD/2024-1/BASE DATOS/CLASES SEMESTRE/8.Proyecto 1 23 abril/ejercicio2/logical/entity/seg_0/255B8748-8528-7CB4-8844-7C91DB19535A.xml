@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="255B8748-8528-7CB4-8844-7C91DB19535A" name="remision">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:02:09 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="6463C83B-FAD1-F7B5-E295-B8287F4685D6">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:02:14 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaRemision" id="D98CAF6E-F702-27B1-3CCA-93D709B3790E">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:02:26 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estadoRemision" id="F1C66D21-C209-ACC5-86E4-AEE14BA726BF">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:02:33 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo1" id="B5C5F237-AE5E-155B-406F-658E05A206A2">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:20:45 UTC</createdTime>
+<generatorID>258D581F-5C35-C1BD-6887-194472783151</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<referedAttribute>8268D488-6A73-69C3-B5F3-BCD06A17CC99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="94FA0813-129B-8A82-C0CA-6931299CBA51" name="remision PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:03:35 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6463C83B-FAD1-F7B5-E295-B8287F4685D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

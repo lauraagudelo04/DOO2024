@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D0724B5-2EAE-9BF1-654C-05EC5127E0F6" name="detalleOrdenCompra">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:45:38 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="C8853BAB-B43C-E52A-3E1E-FB1AFE94110D">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:45:50 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ordenCompra" id="93388DE5-6DFC-CBB8-E0ED-35197B770DE5">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:47:48 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidadPedida" id="AC5C7488-489E-A97A-C48F-225D60983095">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:48:28 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaEntrega" id="DFD30BBE-5AD4-328B-3DA9-6E26A7D5A24D">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:48:43 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo1" id="D40BBC78-BE44-28A9-3C27-B31D09D9C567">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:05:00 UTC</createdTime>
+<generatorID>10166568-E372-0E24-EC63-4CED3550EEFE</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<referedAttribute>792ECFAE-74A0-35FB-2E08-5F7A416CE8F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo2" id="6DB29AAA-3D3C-44FD-7C45-816B7448139A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:09:38 UTC</createdTime>
+<generatorID>CE110285-D762-54BD-860C-AD38E4C7191E</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<referedAttribute>B701CBDE-78DD-EA3D-8BBD-CBFE180107F6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="29A0CA9B-A2AC-1AA6-453B-35847A0519B4" name="detalleOrdenCompra PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:45:55 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C8853BAB-B43C-E52A-3E1E-FB1AFE94110D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

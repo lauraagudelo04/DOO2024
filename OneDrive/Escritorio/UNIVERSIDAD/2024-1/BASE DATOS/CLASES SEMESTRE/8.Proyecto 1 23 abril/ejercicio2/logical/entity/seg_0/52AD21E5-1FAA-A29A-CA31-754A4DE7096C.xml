@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="52AD21E5-1FAA-A29A-CA31-754A4DE7096C" name="detalleFactura">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:59:41 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="B5020ADC-CFB1-28E3-6ED4-E7299AC33C92">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 19:59:48 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad" id="88AF84A0-94D4-CCB3-6889-652A84115983">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:00:08 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="talla" id="781AA23A-FD32-398B-A4C7-CD50D94D7F28">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:00:13 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="color" id="00D0363A-80F3-0186-6AD0-6B4F5440B6F4">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:00:19 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo1" id="1C84FADC-CAB6-E2ED-7B71-ECD1BB831620">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:14:46 UTC</createdTime>
+<generatorID>C946D8FF-98E3-79ED-F688-209ADEDF816F</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<referedAttribute>B701CBDE-78DD-EA3D-8BBD-CBFE180107F6</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo2" id="1F92848D-EE0D-9B3D-5840-F13D8E6B0A77">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:15:02 UTC</createdTime>
+<generatorID>AD6AF3A0-F136-BC45-0B3D-90FDC7E5B2A3</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<referedAttribute>8268D488-6A73-69C3-B5F3-BCD06A17CC99</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CFAAE6CB-8B4C-86EA-6494-BBE1B99DFB39" name="detalleFactura PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:00:33 UTC</createdTime>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<engineerTo>
+<item key="AB6F202F-8907-6D06-CC7C-E27049C6F9FC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5020ADC-CFB1-28E3-6ED4-E7299AC33C92</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
