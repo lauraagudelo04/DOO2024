@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9EE8913E-679C-31A6-4918-44E3D6D8E36D" name="direccion">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>441B52F0-3C11-246F-695C-D3A5C85C5992</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="1E153868-1C2D-46AC-1BBC-4AD01CB2CB3C">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>032AD810-8505-A7E7-15EE-C1079923BF53</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ciudad" id="D9E5E1D9-4925-38B1-C8E0-5551E15DD517">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>10626839-45D3-1BA8-941F-FE0388D6FB56</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="barrio" id="A57CE709-4E93-A2AD-6853-2DB7D819A7DE">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>84D26AC0-2C61-8B6F-4871-C24B7F850797</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="calle" id="2A48555E-BB14-4742-E053-5D90DEBBCF08">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>A8B34E57-DE82-F5D6-69C5-28955258F662</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_codigo" id="E346A2B5-F5CC-F2E8-4438-137FCE817A6A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>02B34A55-F51A-F1A6-DE47-852E53ED00CE</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A48A85F-49E0-B541-ACCB-E61F8C1D2D65" referredColumn="237EAAA8-6836-16AA-D696-36849ED21134"/>
+</associations>
+</Column>
+<Column name="ciudad_codigo" id="D66F2F67-A656-EF87-7ED0-1262EEDDCBB3">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>E3DF5FFE-C19B-5046-8B0E-5CB789889C50</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD1CF84E-C381-04A7-6148-B1268858994F" referredColumn="DCB88F87-70B9-20DE-B616-4B9CA4114845"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31ADB533-D101-F125-C4FC-F81AB85FF6BD" name="direccion_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>480B4E1A-0105-B8D4-0D74-A3D846AAEEF6</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E153868-1C2D-46AC-1BBC-4AD01CB2CB3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE777DA2-18F1-8F06-CA58-F24657CC69CE" name="direccion_ciudad_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>BDB6446B-F517-A460-6EBA-12E3FC96DC9A</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66F2F67-A656-EF87-7ED0-1262EEDDCBB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56494A16-C866-3BE6-7430-7A988AE3DFAA" name="direccion_cliente_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>38337997-F4A3-9C3A-6BF8-99D23C0DBCC2</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E346A2B5-F5CC-F2E8-4438-137FCE817A6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80557428-D31A-A516-0A1B-A2A2F020760B" name="detalleOrdenCompra">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>7D0724B5-2EAE-9BF1-654C-05EC5127E0F6</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="3034C893-B5A9-A46D-EB1B-6FD5AB7520CB">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>C8853BAB-B43C-E52A-3E1E-FB1AFE94110D</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ordenCompra" id="269F963F-3DB3-1A1F-1413-49FA15F0357A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>93388DE5-6DFC-CBB8-E0ED-35197B770DE5</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidadPedida" id="BF2CBE63-3EDE-58DA-51D6-34FF5CFB2F8A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>AC5C7488-489E-A97A-C48F-225D60983095</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaEntrega" id="B4FF2B8F-C57E-E4D6-C61E-7AF751E29EF2">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>DFD30BBE-5AD4-328B-3DA9-6E26A7D5A24D</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ordenDeCompra_codigo" id="767BCC3B-45CA-D287-C87C-6D24694B1932">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>D40BBC78-BE44-28A9-3C27-B31D09D9C567</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40790DA7-E48B-026C-FE55-B13051E6AB82" referredColumn="090ABB59-ECD0-EEB4-CB80-86B883CB919A"/>
+</associations>
+</Column>
+<Column name="Producto_codigo" id="B031B3D1-34E0-C279-98EF-AE7C48436F7F">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>6DB29AAA-3D3C-44FD-7C45-816B7448139A</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9394EBDE-FE53-BDB3-AB7A-3721B882A81D" referredColumn="4FAC5716-C81E-4EB5-B477-F231394CBCB4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5A78E6B-7D11-CA77-C27A-49CA72321CBF" name="detalleOrdenCompra_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>29A0CA9B-A2AC-1AA6-453B-35847A0519B4</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3034C893-B5A9-A46D-EB1B-6FD5AB7520CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="545D52F9-17E2-13F4-323B-7640114EC5E6" name="detalleOrdenCompra_ordenDeCompra_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>10166568-E372-0E24-EC63-4CED3550EEFE</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="767BCC3B-45CA-D287-C87C-6D24694B1932"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC12F393-263E-BD3F-A210-CFFCF73BA6D9" name="detalleOrdenCompra_Producto_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>CE110285-D762-54BD-860C-AD38E4C7191E</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B031B3D1-34E0-C279-98EF-AE7C48436F7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

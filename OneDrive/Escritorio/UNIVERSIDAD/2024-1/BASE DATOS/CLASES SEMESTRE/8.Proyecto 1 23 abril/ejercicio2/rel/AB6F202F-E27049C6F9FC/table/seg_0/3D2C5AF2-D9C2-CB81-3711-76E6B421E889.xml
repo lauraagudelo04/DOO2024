@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3D2C5AF2-D9C2-CB81-3711-76E6B421E889" name="remision">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>255B8748-8528-7CB4-8844-7C91DB19535A</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="47682C5D-7B00-074D-D54A-0D2F66C2D178">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>6463C83B-FAD1-F7B5-E295-B8287F4685D6</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaRemision" id="FBCD8ECB-58C8-4A9A-2EC7-70ACDF7E3526">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>D98CAF6E-F702-27B1-3CCA-93D709B3790E</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estadoRemision" id="6D038141-1A48-D9BF-3085-A64ACD643F50">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>F1C66D21-C209-ACC5-86E4-AEE14BA726BF</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="factura_codigo" id="F9E8B2D5-501F-3110-5403-077713989999">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>B5C5F237-AE5E-155B-406F-658E05A206A2</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CBA53B1-CED9-B6AD-0AAA-279605D027F4" referredColumn="F14F1B47-27BB-F25E-28A8-6553183E65B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EF96397-6116-ED9D-168A-7D396E160BC1" name="remision_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>94FA0813-129B-8A82-C0CA-6931299CBA51</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47682C5D-7B00-074D-D54A-0D2F66C2D178"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E20949C-E0FC-EFC5-5492-FEC25FC541EF" name="remision_factura_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>258D581F-5C35-C1BD-6887-194472783151</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9E8B2D5-501F-3110-5403-077713989999"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

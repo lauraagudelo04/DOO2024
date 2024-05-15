@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C62D86EC-3F65-F3B3-4C6E-730B41B1774D" name="ordenDeCompra">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>611F05B8-EFF7-6626-26E3-F5220ABF60D3</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="090ABB59-ECD0-EEB4-CB80-86B883CB919A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>792ECFAE-74A0-35FB-2E08-5F7A416CE8F2</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fechaOrden" id="FD296D24-C600-2130-DF80-1C22EA09C6C9">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>2F6090B0-63D2-2521-C3CE-543C24FA2457</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estadoOrdenCompra" id="E16AB7CE-E7B6-1227-D6F5-3E7AB1585AC2">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>7C815397-DF6B-5E02-723A-ACF14758CD2A</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="recepcionProducto_codigo" id="1E863E2F-064D-D6D6-9647-E48EF53BC0DE">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>CFE36D57-F44C-8DB7-277B-4D251F04C645</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="283757C6-9F05-AD84-590C-6637D268A8CB" referredColumn="5EC393E5-F110-29EA-D033-DA64E2463DE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B7D2647C-13F6-358C-9A7C-4D102520335E" name="ordenDeCompra_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>BDD614E4-3C23-37EC-E98C-52FFD3CCFA6C</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="090ABB59-ECD0-EEB4-CB80-86B883CB919A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0736142-55FE-5316-E7B2-D09A82EACD60" name="ordenDeCompra_recepcionProducto_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>93670C04-1E14-FDBA-FE0A-D27D1B323E9E</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E863E2F-064D-D6D6-9647-E48EF53BC0DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

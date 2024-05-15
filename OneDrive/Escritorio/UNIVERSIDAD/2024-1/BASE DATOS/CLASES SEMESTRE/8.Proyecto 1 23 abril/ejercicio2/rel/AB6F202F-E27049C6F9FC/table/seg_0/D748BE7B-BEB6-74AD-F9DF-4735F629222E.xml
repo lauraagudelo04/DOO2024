@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D748BE7B-BEB6-74AD-F9DF-4735F629222E" name="detalleFactura">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>52AD21E5-1FAA-A29A-CA31-754A4DE7096C</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="E2F5C453-9C1E-A9F9-CC4F-4EA780F98E6E">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>B5020ADC-CFB1-28E3-6ED4-E7299AC33C92</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="D359C5BE-5B57-5D4D-B192-0274A3903675">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>88AF84A0-94D4-CCB3-6889-652A84115983</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="talla" id="06CF1FA7-A6E8-610B-41DE-3BF6165203F5">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>781AA23A-FD32-398B-A4C7-CD50D94D7F28</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="C56FF17C-DFFF-CC08-1A59-8695BA4837DD">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>00D0363A-80F3-0186-6AD0-6B4F5440B6F4</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Producto_codigo" id="E6EDB012-7885-F4EB-76ED-4EA8EFC632E6">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>1C84FADC-CAB6-E2ED-7B71-ECD1BB831620</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9468ED9E-5C59-84D2-B2D1-BC04F8A5B3F1" referredColumn="4FAC5716-C81E-4EB5-B477-F231394CBCB4"/>
+</associations>
+</Column>
+<Column name="factura_codigo" id="F19CD8C5-05E5-D8B3-D5FE-EFB80E51CF3A">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>1F92848D-EE0D-9B3D-5840-F13D8E6B0A77</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF6B71BD-C135-60BE-1BFA-8BCECF2D9B03" referredColumn="F14F1B47-27BB-F25E-28A8-6553183E65B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF37C10E-71F1-7D9D-67A4-32A58E6A4238" name="detalleFactura_PK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>CFAAE6CB-8B4C-86EA-6494-BBE1B99DFB39</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2F5C453-9C1E-A9F9-CC4F-4EA780F98E6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10AEC187-2F42-2DB6-A27F-C935D60C3DD8" name="detalleFactura_Producto_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>C946D8FF-98E3-79ED-F688-209ADEDF816F</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6EDB012-7885-F4EB-76ED-4EA8EFC632E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE0E18F1-0C3E-2667-82E2-2AD6F2352920" name="detalleFactura_factura_FK">
+<createdBy>HP</createdBy>
+<createdTime>2024-04-17 20:26:26 UTC</createdTime>
+<generatorID>AD6AF3A0-F136-BC45-0B3D-90FDC7E5B2A3</generatorID>
+<ownerDesignName>ejercicio2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F19CD8C5-05E5-D8B3-D5FE-EFB80E51CF3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
